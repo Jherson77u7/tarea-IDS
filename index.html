@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+         .foo, .bar{
+        color: green;
+    }
+    .abuelo .nieto {
+        color : red;
+    }
+    .abuelo>div {
+        color:orange;
+    }
+    .hijo1{
+        color:yellow;
+    } 
+     .hijo1~div{
+        color: violet;
+    } 
+     .foo{
+        color: green;
+
+    }
+    #bar{
+        color:red;
+    } 
+    #outer a{
+        background-color: red;
+    }
+
+    #outer #inner a{
+        background-color: blue;
+    }
+</style>
+<body>
+    <p class="foo" >
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit excepturi qui, quam magnam nam molestias adipisci. Ab totam tenetur molestiae? Suscipit earum blanditiis magni aut molestias deleniti iste ducimus.
+    </p>
+    <p class="bar">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quasi? Maiores, voluptas. Id ratione totam iure ut tempore expedita impedit assumenda veritatis voluptatibus cupiditate ducimus, eveniet unde deleniti aperiam reprehenderit?
+    </p>
+    <p class="baz">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, consequuntur quis ipsum odit voluptatem aspernatur ipsa. Repellendus dicta repellat ea, dolore fugiat, corrupti maiores exercitationem cupiditate molestias dolorem reprehenderit aperiam.
+    </p>
+    <!-- <div class="abuelo">
+        <div class="hijo1">
+            <div class="nieto">soy el nieto 1</div>
+            <div class="nieto">soy el nieto 2</div>
+        </div>
+        <div class="hijo2">soy el hijo 2</div>
+        
+    </div>
+    <div class="nieto">el otro nieto</div> -->
+    <div class="abuelo">
+        <div class="hijo1">soy el hijo 1</div>
+        <div class="hijo2">soy el hijo 2</div>
+        <div class="hijo3">soy el hijo 3</div>
+        <p>soy el mas perro de los hijos 4 </p>
+
+    </div>
+    <body>
+        <p class="foo" id="bar">
+            HOLA
+        </p>
+        <div id="outer">
+            <div id="inner">
+                <a href="">HOLA MUNDO</a>
+            </div>
+           
+        </div>
+    </body>
+</body>
+</html>
